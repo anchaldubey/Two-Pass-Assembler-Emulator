@@ -1,0 +1,83 @@
+/---------------------------------------------------------------------------/
+Claim File																															
+Name: Anchal Dubey
+Roll No. 2201CS15
+Declaration of Authorship
+/---------------------------------------------------------------------------/
+
+***********
+Files:
+***********
+All the files that I am submitting: asm.cpp, emu.cpp and claim.txt, have my name and roll no. at the start.
+
+The evidence for Assembler including the output files from the test examples have been added in the folder. There are three test cases: MyBubbleSort(3 output files), test1(3 output files) , test2(3 output files) and test3(error file). 	All the test files including the 4 pregiven and the 3 new ones have been tested and they work properly.
+
+Both of my C++ programs do not show any errors and warnings when I compile them with g++ asm.cpp -o asm and g++ emu.cpp -o emu.
+
+Both programs are compilable with g++ asm.cpp -o asm and g++ emu.cpp -o emu.
+
+
+*****************************
+Program format:
+*****************************
+1. The Assembler:
+
+    * It has a struct that stores labels, mnemonic, operand and operand type and checks if the label is there or not.
+    * Detects label and mnemonic errors.
+    * Sensible variable, function & type names with explanatory comments.
+    * Generates a log file, an advanced listing file and an object file.
+    * Can detect warnings for unused label
+    * Can detect errors like invalid mnemonic, invalid label name and wrong syntax.
+    * Can implement and demonstrate the SET instruction.
+
+2. The Emulator:
+
+    * Can load object file. 
+    * Can produce memory dump.
+    * Has many options like -t(trace), -dump, -run and all other.
+    * by giving the instruction like "-t", the program prints the result of program executed.
+
+*****************************
+Testing:
+*****************************
+ 
+1. The assembler:
+
+I have tested all the examples as shown below. 
+
+The others were tested without any errors detected and produced three output files, listing file, 
+error log file and machine readable object file, for each example.
+
+
+1)
+#Input:asm MyBubbleSort.asm
+#Output: 
+a. MyBubbleSort.lst
+b. MyBubbleSort.log (without any error messages)
+c. MyBubbleSort.o
+
+2)
+#Input:asm test1.asm
+#Output: 
+a. test1.lst
+b. test1.log (without any error messages)
+c. test1.o
+
+3)
+#Input:asm test2.asm
+#Output: 
+a. test2.lst
+b. test2.log (without any error messages)
+c. test2.o
+
+2)
+#Input:asm test3.asm
+#Output: 
+a. test3.lst is not generated
+b. test3.log (contains error messages)
+c. test3.o is not generated
+
+
+2. The emulator:
+
+I have tested all the examples. The results were as expected.
